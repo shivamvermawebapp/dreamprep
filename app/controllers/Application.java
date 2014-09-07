@@ -31,4 +31,8 @@ public class Application extends Controller {
     	List<Person> persons = new Model.Finder(String.class, Person.class).all();
     	return ok(toJson(persons));
     }
+    
+    public static Result test() {
+    	return ok("Hello World");
+    }
 }
